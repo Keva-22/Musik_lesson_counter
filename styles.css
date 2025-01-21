@@ -1,0 +1,109 @@
+/* Globales Reset/Box-Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hintergrund und Ausrichtung */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  background: linear-gradient(135deg, #81ecec, #74b9ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hauptcontainer */
+.container {
+  max-width: 600px;
+  width: 90%;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Titel der Seite */
+.page-title {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Card-Design */
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  padding: 25px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Titel in jeder Card */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Countdown-Grid: Labels oben, Werte darunter */
+.countdown-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Labels im Countdown */
+.countdown-labels {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Werte (Squares) in einer Zeile */
+.countdown-values {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Die Quadrate, in denen die Zahlen stehen */
+.square {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.info-message {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 15px;
+}
+
+/* Zähler der verbleibenden Stunden */
+.lesson-count {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}

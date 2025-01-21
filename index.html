@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Musikstunden Zähler</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+  <h1 class="page-title">Musikstunden Zähler</h1>
+
+  <!-- Countdown zur nächsten Musikstunde -->
+  <div class="card">
+    <h2 id="countdown-title" class="card-title">Nächste Musikstunde:</h2>
+
+    <!-- Neuer Countdown-Bereich mit Labels und Squares -->
+    <div class="countdown-grid" id="countdown-grid">
+      <!-- Labels -->
+      <div class="countdown-labels">
+        <span>Tage</span>
+        <span>Stunden</span>
+        <span>Minuten</span>
+        <span>Sekunden</span>
+      </div>
+      <!-- Square-Boxen für die Werte -->
+      <div class="countdown-values">
+        <div class="square" id="days-value">0</div>
+        <div class="square" id="hours-value">0</div>
+        <div class="square" id="minutes-value">0</div>
+        <div class="square" id="seconds-value">0</div>
+      </div>
+    </div>
+
+    <p class="info-message" id="info-message"></p>
+  </div>
+
+  <!-- Anzeige der verbleibenden Musikstunden bis zum Enddatum -->
+  <div class="card">
+    <!-- Kurze Überschrift oder Label für die Anzeige -->
+    <h2 class="card-title">Verbleibende Musikstunden:</h2>
+    <!-- Hier erscheint dann der berechnete Wert aus main.js -->
+    <p id="lesson-count" class="lesson-count">
+      <!-- Platzhaltertext, falls noch nichts berechnet -->
+      Noch keine Berechnung erfolgt.
+    </p>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
